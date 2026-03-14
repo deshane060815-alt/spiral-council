@@ -24,6 +24,14 @@ Use the smallest useful checks for your change:
 
 If you touch UI behavior or styles, also do a quick manual browser check of the affected page(s).
 
+## Agent workflow
+
+1. Read the request carefully and inspect relevant files before editing.
+2. Keep changes tightly scoped to the request.
+3. Prefer minimal, targeted diffs over broad refactors.
+4. Run the smallest useful validation command(s) for the change.
+5. Summarize what changed and how it was validated.
+
 ## Coding conventions
 
 - Keep changes scoped to the user request; avoid broad refactors.
@@ -31,6 +39,13 @@ If you touch UI behavior or styles, also do a quick manual browser check of the 
 - Prefer simple, readable React components and clear TypeScript types.
 - Do not update `package-lock.json` unless dependencies actually changed.
 - Do not add new dependencies unless required for the request.
+- Avoid renaming/moving files unless the request requires it.
+
+## Git and safety
+
+- Do not revert or overwrite unrelated local changes.
+- Stage only files relevant to the request.
+- Use descriptive commit messages that explain intent.
 
 ## Cursor Cloud specific instructions
 
