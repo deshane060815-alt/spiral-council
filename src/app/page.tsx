@@ -16,7 +16,7 @@ export default function Home() {
   const ritualUrl = getRitualUrl();
 
   return (
-    <main>
+    <main className="flex items-center gap-4 p-4">
       <button className="px-6 py-3">Begin Ritual</button>
       <button className="">Learn More</button>
       <Link href={ritualUrl}>Go to Ritual: {ritualUrl}</Link>
